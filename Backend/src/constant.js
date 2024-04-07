@@ -1,1 +1,1 @@
-export const DB_NAME = "vishalbackend"
+export const DB_NAME = "EdTech_Backend"

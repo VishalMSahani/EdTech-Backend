@@ -34,6 +34,7 @@ const createCourse = asyncHandler(async(req, res) =>{
         price: parseFloat(price),
         instructor : instructor?._id ,
         tags: getTag?._id,
+        // thumbnail
     })
 
     await User.findByIdAndUpdate(
@@ -45,5 +46,10 @@ const createCourse = asyncHandler(async(req, res) =>{
     .json(
         new ApiResponse(200, newCourse ,"Course created successfully")
     )
+
+})
+
+const getCourses = asyncHandler(async(req, res)=>{
+    const pageSize=3;
 
 })
